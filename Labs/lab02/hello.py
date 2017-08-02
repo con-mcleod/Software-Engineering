@@ -1,2 +1,2 @@
-print("Hello, git!")
+print(", git!")
 print("new line")
