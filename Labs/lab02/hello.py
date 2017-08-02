@@ -1,3 +1,3 @@
-print("Hel something, git!")
+print(", git!")
 print("something")
 print("new line")
