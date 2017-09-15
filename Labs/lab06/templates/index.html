@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesheets/style.css') }}">
+
+		<style>
+			button {
+				background-color: white;
+			}
+			button[value="="] {
+				background-color: #ffc;
+			}
+			.output {
+				width: 365px;
+				height: 50px;
+				border: solid;
+				background-color: #ffc;
+			}
+			.output h2 {
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+		<h1>Calculator</h1>
+
+		<div class="output">
+
+			{% if expr != "" %}
+				<h2>{{ expr }}</h2>
+			{% else %}
+				<br><br>
+			{% endif %}
+		
+		</div>
+		<br>
+
+		<div class="buttons">
+			<Form class="" action="" method="POST">
+				<button type="submit" name="bt" value="1">1</button>
+				<button type="submit" name="bt" value="2">2</button>
+				<button type="submit" name="bt" value="3">3</button>
+				<button type="submit" name="bt" value="C">C</button>
+				<br>
+
+				<button type="submit" name="bt" value="4">4</button>
+				<button type="submit" name="bt" value="5">5</button>
+				<button type="submit" name="bt" value="6">6</button>
+				<button type="submit" name="bt" value="+">+</button>
+				<br>
+
+				<button type="submit" name="bt" value="7">7</button>
+				<button type="submit" name="bt" value="8">8</button>
+				<button type="submit" name="bt" value="9">9</button>
+				<button type="submit" name="bt" value="-">-</button>
+				<br>
+
+				<button type="submit" name="bt" value="0">0</button>
+				<button type="submit" name="bt" value="*">*</button>
+				<button type="submit" name="bt" value="/">/</button>
+				<button type="submit" name="bt" value="=">=</button>
+				<br>
+
+				<button type="submit" name="bt" value="(">(</button>
+				<button type="submit" name="bt" value=")">)</button>
+				<button type="submit" name="bt" value="sin(">sin</button>
+				<button type="submit" name="bt" value="tan(">tan</button>
+				<br>
+
+				<button type="submit" name="bt" value="cos(">cos</button>
+				<button type="submit" name="bt" value="log(">log</button>
+				<button type="submit" name="bt" value="sqrt(">sqrt</button>
+				<button type="submit" name="bt" value="CE">CE</button>
+				<br>
+		  	</Form>
+		  </div>
+
+	  	</center>
+	</body>
+</html>
