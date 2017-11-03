@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Login page</title>
+	</head>
+	<body>
+		<form method="POST">
+			<h1>Login form:</h1>
+			<input placeholder="Enter user id" name="zid"/>
+			<input placeholder="Enter password" name="password"/>
+			<button type="submit">Login</button>
+		</form>
+		{% if success %}
+			<p> {{success}} </p>
+		{% endif %}
+	</body>
+</html>
